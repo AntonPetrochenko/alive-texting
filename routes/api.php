@@ -22,7 +22,7 @@ Route::prefix('/user')->middleware(['web','auth:sanctum'])->group( function () {
         });  
         Route::post('/trade', [TaskController::class, 'trade']); //trade tasks
 
-        Route::post('/resolve', [TaskController::class, 'done']); //trade tasks
+        Route::post('/resolve', [TaskController::class, 'done']); //resolve tasks
     });
 });
 
